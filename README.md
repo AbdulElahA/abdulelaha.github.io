@@ -1,4 +1,4 @@
-
+<div dir="rtl">
 # مشاريع التقنية الرقمية
 
 يتكون هذا الملف من مشروعين:
@@ -17,9 +17,13 @@
 - Javascript
 
 ## مشروع الوحدة الثانية
+<p align="center">
+  <img src="https://www.foundingday.sa/assets/asset-3.svg" width="400" alt="فول الهذلي"/>
+</p>
 المشروع عبارة عن موقع ليوم التأسيس
 
 **اللغات المستخدمة في الموقع**
 - HTML
 - CSS (Bootstrap)
-- Javascript (GetForm)
+- Javascript
+</div>
