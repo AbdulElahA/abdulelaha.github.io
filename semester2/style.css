@@ -1,0 +1,150 @@
+@font-face {
+  font-family: 'Harir';
+  src: url('Harir-Reg.woff2') format('woff2'),
+    url('Harir-Reg.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Harir';
+  src: url('Harir-Bld.woff2') format('woff2'),
+    url('Harir-Bld.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Harir';
+}
+
+body {
+  background: #F4EADA;
+  overflow-x: hidden;
+}
+
+/* Parallax */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.background,
+.foreground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.foreground {
+  z-index: 2;
+  mix-blend-mode: multiply;
+  /* This blends the foreground with the background */
+}
+
+.parallax-text {
+  position: absolute;
+  /* width: 100%; */
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 60pt;
+  text-align: center;
+  filter: brightness(100);
+}
+
+@media (max-width: 1160px) {
+  .parallax-text {
+    font-size: 4em;
+  }
+}
+
+input[type="text"],
+input[type="submit"] {
+  padding-top: 14px;
+}
+
+.accordion-button::after {
+  margin-right: auto;
+  margin-left: 0 !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+
+#loading-screen {
+  opacity: 1;
+  transition: all 1s ease;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #D8C2AC;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  overflow: hidden;
+  /* Set overflow to hidden for the loading screen container */
+}
+
+.loading-spinner {
+  width: 8rem;
+  height: 8rem;
+  /* Set the desired height for your image */
+  background: url('https://www.foundingday.sa/assets/img/sss.png') center center no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.fade-out {
+  opacity: 0;
+}
+
+#main-content {
+  display: none;
+}
