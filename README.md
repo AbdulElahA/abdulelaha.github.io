@@ -18,7 +18,7 @@
 
 ## مشروع الوحدة الثانية
 <p align="center">
-  <img src="https://www.foundingday.sa/assets/asset-3.svg" width="400" alt="فول الهذلي"/>
+  <img src="https://www.foundingday.sa/assets/asset-7.svg" width="400" alt="فول الهذلي"/>
 </p>
 المشروع عبارة عن موقع ليوم التأسيس
 
